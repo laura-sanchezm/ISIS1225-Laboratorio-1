@@ -138,6 +138,7 @@ def load_books_tags(catalog, filename):
     # La función debe cargar los tags de los libros del archivo y los agregar al conjunto book_tags del catalogo.
     # La función debe retornar el tamaño del conjunto de tags de los libros.
     
+    
     book_tags=catalog.get("book_tags")
     book_tags_file=os.path.join(data_dir, filename)
     catalog["book_tags"] = set.load_set(book_tags, book_tags_file)
